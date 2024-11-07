@@ -36,31 +36,41 @@
         <form id="signUpForm" action="">
           <div>
             <label for="firstName">FIRST NAME</label>
-            <input type="text" id="firstName" required/>
+            <input type="text" id="firstName" name="first-name" required />
           </div>
           <div>
             <label for="lastName">LAST NAME</label>
-            <input type="text" id="lastName" required/>
+            <input type="text" id="lastName" name="last-name" required />
           </div>
           <div>
-            <label for="email">EMAIL</label> <input type="text" id="email" required/>
+            <label for="email">EMAIL</label>
+            <input type="text" id="email" name="email" required />
           </div>
           <div>
             <label for="phoneNumber">PHONE NUMBER</label>
-            <input type="text" id="phoneNumber" required/>
+            <input type="text" id="phoneNumber" name="phone-number" required />
           </div>
           <div>
-            <label for="password">PASSWORD</label>
-            <input type="text" id="password" required/>
-          </div>
-          <div>
-            <label for="confirmPassword">CONFIRM PASSWORD</label>
-            <input type="text" id="confirmPassword" required/>
+            <div>
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div>
+              <label for="confirmPassword">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirm-password"
+                required
+              />
+            </div>
           </div>
         </form>
       </section>
       <section>
-        <button type="submit" class="btn-submit" form="signUpForm">Create Account</button>
+        <button type="submit" class="btn-submit" form="signUpForm">
+          Create Account
+        </button>
         <p>Already have an account? <a>Log in</a></p>
       </section>
     </main>

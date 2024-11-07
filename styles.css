@@ -3,10 +3,15 @@
     src: url(assets\fonts\Norse-Bold.otf) format("opentype");
 }
 
-/* body {
+body {
     display: flex;
     height: 100vh;
-} */
+}
+
+header {
+    width: 700px;
+}
+
 
 #logo {
     background-color: #00000077;
@@ -14,4 +19,8 @@
 
 .btn-submit {
     background-color: #596D48;
+}
+
+input[type="password"]:invalid {
+    border-color: #CC0C0C
 }
