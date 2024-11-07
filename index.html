@@ -33,16 +33,30 @@
       </section>
       <section>
         <h2>Let's do this!</h2>
-        <form action="">
+        <form id="signUpForm" action="">
           <div>
             <label for="firstName">FIRST NAME</label>
-            <input type="text" />
+            <input type="text" id="firstName" required/>
           </div>
-          <div><label for="lastName">LAST NAME</label> <input type="text" /></div>
-          <div><label for="email">EMAIL</label> <input type="text" /></div>
-          <div><label for="phoneNumber">PHONE NUMBER</label> <input type="text" /></div>
-          <div><label for="password">PASSWORD</label> <input type="text" /></div>
-          <div><label for="confirmPassword">CONFIRM PASSWORD</label> <input type="text" /></div>
+          <div>
+            <label for="lastName">LAST NAME</label>
+            <input type="text" id="lastName" required/>
+          </div>
+          <div>
+            <label for="email">EMAIL</label> <input type="text" id="email" required/>
+          </div>
+          <div>
+            <label for="phoneNumber">PHONE NUMBER</label>
+            <input type="text" id="phoneNumber" required/>
+          </div>
+          <div>
+            <label for="password">PASSWORD</label>
+            <input type="text" id="password" required/>
+          </div>
+          <div>
+            <label for="confirmPassword">CONFIRM PASSWORD</label>
+            <input type="text" id="confirmPassword" required/>
+          </div>
         </form>
       </section>
       <section>
