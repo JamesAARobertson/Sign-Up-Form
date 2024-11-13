@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Norse Bold";
-    src: url(assets\fonts\Norse-Bold.otf) format("opentype");
+    src: url(assets/fonts/Norse-Bold.otf) format("opentype");
 }
 
 body {
@@ -10,11 +10,29 @@ body {
 
 header {
     width: 700px;
+    /* position: relative; */
 }
+
+
 
 
 #logo {
     background-color: #00000077;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo img {
+    width: 100px;
+}
+
+#logo h1 {
+    font-family: "Norse Bold";
 }
 
 .btn-submit {
