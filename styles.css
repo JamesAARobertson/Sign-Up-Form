@@ -175,3 +175,13 @@ label {
 .bigText:first-child {
     margin-bottom: 24px;
 }
+
+.link {
+    font-weight: bold;
+    color: #596D48;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
