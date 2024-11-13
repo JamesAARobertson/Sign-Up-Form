@@ -3,10 +3,10 @@
     src: url(assets/fonts/Norse-Bold.otf) format("opentype");
 }
 
-
-* {
+/* * {
     border: 1px solid red
-}
+} */
+
 body {
     display: flex;
     height: 100vh;
@@ -45,6 +45,15 @@ header {
 .btn-submit {
     background-color: #596D48;
     color: #fff;
+    padding: 12px 48px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 0 4px #000;
+
 
 }
 
@@ -86,7 +95,7 @@ img {
 }
 
 main {
-    /* flex: 3 0; */
+    flex: 3 0;
     display: flex;
     flex-direction: column;
 }
@@ -96,9 +105,9 @@ section {
     padding: 32px 48px;
 }
 
-/* section:not(:has(form)) {
+section:not(:has(form)) {
     background-color: #F9FAFB;
-} */
+}
 
 section:first-child {
     display: flex;
@@ -116,4 +125,17 @@ section:has(form) {
 .form-row {
     display: flex;
     gap: 64px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 6px 8px;
+}
+
+.bigText {
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 675px;
+    margin: 0
 }
