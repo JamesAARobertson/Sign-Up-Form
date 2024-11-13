@@ -1,141 +1,177 @@
 @font-face {
-    font-family: "Norse Bold";
-    src: url(assets/fonts/Norse-Bold.otf) format("opentype");
+  font-family: "Norse Bold";
+  src: url(assets/fonts/Norse-Bold.otf) format("opentype");
 }
 
 /* * {
     border: 1px solid red
-} */
+    } */
 
 body {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  height: 100vh;
 }
 
 header {
-    width: 700px;
-    position: relative;
-}
-
-
-
-#logo {
-    background-color: #00000077;
-    position: absolute;
-    top: 200px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 155px;
-    z-index: 1;
-}
-
-#logo img {
-    width: 100px;
-}
-
-#logo h1 {
-    font-family: "Norse Bold", Arial, Helvetica, sans-serif;
-    font-size: 6rem;
-    color: #fff
-}
-
-.btn-submit {
-    background-color: #596D48;
-    color: #fff;
-    padding: 12px 48px;
-    margin-bottom: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-weight: bold;
-    box-shadow: 0 0 4px #000;
-
-
-}
-
-input[type="password"]:invalid {
-    border-color: #CC0C0C
-}
-
-figure {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
-figure img {
-    height: 100%
-}
-
-figcaption {
-    position: absolute;
-    bottom: 10px;
-    z-index: 1;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-}
-
-figcaption a {
-    color: #fff
-}
-
-figcaption a:hover {
-    text-decoration: none;
-}
-
-img {
-    display: block;
-    width: 100%;
+  width: 700px;
+  position: relative;
 }
 
 main {
-    flex: 3 0;
-    display: flex;
-    flex-direction: column;
+  flex: 3 0;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+
+#logo {
+  background-color: #00000077;
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 155px;
+  z-index: 1;
+}
+
+
+#logo img {
+  width: 100px;
+}
+
+#logo h1 {
+  font-family: "Norse Bold", Arial, Helvetica, sans-serif;
+  font-size: 6rem;
+  color: #fff;
+}
+
+.btn-submit {
+  background-color: #596d48;
+  color: #fff;
+  padding: 12px 48px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 0 4px #000;
+}
+
+.btn-submit:hover {
+  background-color: #6d805d;
+}
+
+figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+figure img {
+  height: 100%;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 10px;
+  z-index: 1;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+figcaption a {
+  color: #fff;
+}
+
+figcaption a:hover {
+  text-decoration: none;
 }
 
 section {
-    flex: 1;
-    padding: 32px 48px;
+  flex: 1;
+  padding: 32px 48px;
 }
 
 section:not(:has(form)) {
-    background-color: #F9FAFB;
+  background-color: #f9fafb;
 }
 
 section:first-child {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 48px;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 48px;
+  justify-content: flex-end;
 }
 
 section:has(form) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 3px 5px #cdcbcb;
+  padding-block: 16px 24px;
 }
 
 .form-row {
-    display: flex;
-    gap: 64px;
+  display: flex;
+  gap: 64px;
+}
+
+.form-row:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+label,
+input {
+  display: block;
 }
 
 input {
-    border: 1px solid #E5E7EB;
-    border-radius: 3px;
-    padding: 6px 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+  padding: 6px 8px;
+  width: 250px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2175f3;
+  box-shadow: 3px 3px 5px #c2c2c2;
+}
+
+input[type="password"]:invalid {
+  border-color: #cc0c0c;
+}
+
+input[type="password"]:invalid + span::after {
+  content: "* Passwords do not match";
+  color: #cc0c0c;
+  font-size: 0.8rem;
+}
+
+label {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 2px #c4c4c4;
 }
 
 .bigText {
-    font-size: 1.5rem;
-    font-weight: 500;
-    width: 675px;
-    margin: 0
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 675px;
+  margin: 0;
+}
+
+.bigText:first-child {
+    margin-bottom: 24px;
 }
