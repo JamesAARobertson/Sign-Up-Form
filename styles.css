@@ -3,9 +3,10 @@
   src: url(assets/fonts/Norse-Bold.otf) format("opentype");
 }
 
-/* * {
-    border: 1px solid red
-    } */
+* {
+    /* border: 1px solid red */
+    margin: 0;
+    }
 
 body {
   display: flex;
