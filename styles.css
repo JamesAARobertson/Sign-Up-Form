@@ -120,6 +120,7 @@ section:has(form) {
   justify-content: center;
   box-shadow: 0 3px 5px #cdcbcb;
   padding-block: 16px 24px;
+  z-index: 1;
 }
 
 .form-row {
